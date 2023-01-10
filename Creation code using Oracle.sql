@@ -4,7 +4,7 @@ CREATE TABLE Bill (
     bill_id varchar(10)  NOT NULL,
     patient_id varchar(10)  NOT NULL,
     prescription_id varchar(10)  NULL,
-    treatment_id varchar(10)  NULL,
+    treatment_id varchar(10) NOT NULL,
     total_cost integer  NOT NULL,
     CONSTRAINT Bill_pk PRIMARY KEY (bill_id)
 ) ;
