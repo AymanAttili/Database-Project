@@ -3,8 +3,8 @@
 CREATE TABLE Bill (
     bill_id varchar(10)  NOT NULL,
     patient_id varchar(10)  NOT NULL,
-    prescription_id varchar(10)  NULL,
-    treatment_id varchar(10) NOT NULL,
+    prescription_id varchar(10),
+    treatment_id varchar(10),
     total_cost integer  NOT NULL,
     CONSTRAINT Bill_pk PRIMARY KEY (bill_id)
 ) ;
@@ -43,10 +43,10 @@ CREATE TABLE Medicine (
 CREATE TABLE Patient (
     patient_id varchar(10)  NOT NULL,
     name varchar(50)  NOT NULL,
-    birth_date date  NULL,
+    birth_date date ,
     gender varchar(6)  NOT NULL,
-    city varchar(50)  NULL,
-    phone varchar(15)  NULL,
+    city varchar(50),
+    phone varchar(15) ,
     CONSTRAINT Patient_pk PRIMARY KEY (patient_id)
 ) ;
 
